@@ -14,9 +14,9 @@ class StartScreen extends StatelessWidget {
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text(
             'Start Game',
-            style: GoogleFonts.lilitaOne(fontSize: 20),
+            style: GoogleFonts.lilitaOne(fontSize: 60),
           ),
-          SizedBox(height: 80),
+          SizedBox(height: 60),
           ElevatedButton(onPressed: null, child: Text('START'))
         ])));
   }
