@@ -16,7 +16,9 @@ class StartScreen extends StatelessWidget {
             'Start Game',
             style: GoogleFonts.lilitaOne(fontSize: 60),
           ),
-          SizedBox(height: 60),
+          Image(
+            image: AssetImage('tictac.png'),
+          ),
           ElevatedButton(onPressed: null, child: Text('START'))
         ])));
   }
