@@ -10,16 +10,36 @@ class StartScreen extends StatelessWidget {
         appBar: const TicAppBar(),
         backgroundColor: Colors.white,
         body: Center(
-            child:
-                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            child: Column(children: [
+          SizedBox(
+            height: 70,
+          ),
           Text(
             'Start Game',
             style: GoogleFonts.lilitaOne(fontSize: 60),
           ),
-          Image(
-            image: AssetImage('tictac.png'),
+          Padding(
+            padding: const EdgeInsets.only(top: 40.0),
+            child: Image(
+              height: 400,
+              width: 400,
+              image: AssetImage('assets/images/tictac2.png'),
+            ),
           ),
-          ElevatedButton(onPressed: null, child: Text('START'))
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.orange,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            height: 70,
+            width: 150,
+            child: Center(
+              child: Text(
+                'START',
+                style: GoogleFonts.bungeeSpice(fontSize: 70),
+              ),
+            ),
+          )
         ])));
   }
 }
