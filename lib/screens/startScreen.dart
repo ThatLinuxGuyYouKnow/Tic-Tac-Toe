@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tic_tac_toe/screens/tit_tac_toe.dart';
 import 'package:tic_tac_toe/widgets/appbar.dart';
 
 class StartScreen extends StatelessWidget {
@@ -28,7 +29,12 @@ class StartScreen extends StatelessWidget {
             const SizedBox(height: 40),
             ElevatedButton(
               onPressed: () {
-                // Add navigation or game start logic here
+                Navigator.push<void>(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => TicTacToeScreen(),
+                  ),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orange,
