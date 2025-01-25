@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(TicTacToeApp());
-}
-
 class TicTacToeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -34,7 +30,7 @@ class _TicTacToeScreenState extends State<TicTacToeScreen> {
       body: Center(
         child: GridView.builder(
           shrinkWrap: true,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3, // 3 columns
             crossAxisSpacing: 8.0, // Spacing between columns
             mainAxisSpacing: 8.0, // Spacing between rows
